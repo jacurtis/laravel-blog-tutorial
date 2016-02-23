@@ -52,4 +52,4 @@
                 <h2>Sidebar</h2>
             </div>
         </div>
-@endsection
+@stop
