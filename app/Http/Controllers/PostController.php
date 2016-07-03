@@ -121,7 +121,7 @@ class PostController extends Controller
     {
         // Validate the data
         $post = Post::find($id);
-        
+
         if ($request->input('slug') == $post->slug) {
             $this->validate($request, array(
                 'title' => 'required|max:255',
@@ -145,14 +145,14 @@ class PostController extends Controller
         $post->category_id = $request->input('category_id');
         $post->body = $request->input('body');
 
-        $post->save();   
+        $post->save();
 
         if (isset($request->tags)) {
             $post->tags()->sync($request->tags);
         } else {
             $post->tags()->sync(array());
         }
-             
+
 
         // set flash data with success message
         Session::flash('success', 'This post was successfully saved.');
@@ -170,6 +170,8 @@ class PostController extends Controller
     public function destroy($id)
     {
         $post = Post::find($id);
+
+        $post->tags()->detach();
 
         $post->delete();
 
