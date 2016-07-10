@@ -4,7 +4,7 @@
 
 ---
 
-Full Playlist for the "How to Build a Blog with Laravel" Series: [![Watch FREE on YouTube](https://www.youtube.com/playlist?list=PLwAKR305CRO-Q90J---jXVzbOd4CDRbVx)](https://travis-ci.org/laravel/framework)
+Full Playlist for the "How to Build a Blog with Laravel" Series: [Watch FREE on YouTube](https://www.youtube.com/playlist?list=PLwAKR305CRO-Q90J---jXVzbOd4CDRbVx)
 
 
 Laravel is one of the fastest growing and most popular frameworks on the internet right now. In this series we not only explore what makes Laravel great, but learn concepts of CRUD (Create, Read, Update, Delete), MVC (Model, View, Controller), and other web technologies to create a blog application built on top of Laravel.
