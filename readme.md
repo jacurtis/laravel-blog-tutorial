@@ -26,7 +26,7 @@ You can also get the most of our community by joining us on our hub at [DevMarke
 
 ## Known Bugs
 
-This is a long series teaching how to buid a blog system. Everything is caught on video which greatly slows down the development process. Also with so many skills needing to be taught in such a short period of time, many bugs will naturally arise as they do in any development project. What makes things tricky is that after a video goes live, t is difficult to highlight and impliment bug fixes. Source code needs to stay in sync with the videos, many of which do not highlight these bugs fixes.
+This is a long series teaching how to buid a blog system. Everything is caught on video which greatly slows down the development process. Also with so many skills needing to be taught in such a short period of time, many bugs will naturally arise as they do in any development project. What makes things tricky is that after a video goes live, it is difficult to highlight and impliment bug fixes. Source code needs to stay in sync with the videos, many of which do not highlight these bugs fixes.
 
 The solution is to create a bug log of known bugs and known resolutions that can be fixed at a later time.
 
@@ -37,7 +37,7 @@ The solution is to create a bug log of known bugs and known resolutions that can
 
 - **Part 38:** When a user leaves the tag multi-select box empty upon creating a new tag, an error occurs because we do not check if the tag field is empty like we do when updating a tag.
 
-	- Solution: Add an `if` statement to check if the tag field has anything in it, if it does, the sync, otherwise do nothing.
+	- Solution: Add an `if` statement to check if the tag field has anything in it, if it does, then sync, otherwise do nothing.
 
 
 ## Feedback
@@ -45,6 +45,7 @@ The solution is to create a bug log of known bugs and known resolutions that can
 Thank you for all the great feedback so far. If you have further questions you can either create an issue on the item here on github that we can discuss via comments, or you can reach out to me on either Twitter or Email.
 
 Twitter: [Twitter @_jacurtis](http://twitter.com/_jacurtis) (Be sure to follow me too)
+
 Email: hello@devmarketer.io
 
 ## Hire Me
@@ -61,4 +62,4 @@ For all requests or quotes on Marketing or Project Management consulting, please
 
 ### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+This project and the underlying Laravel framework are open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
