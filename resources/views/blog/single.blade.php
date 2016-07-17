@@ -15,10 +15,23 @@
 
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
+			<h3 class="comments-title"><span class="glyphicon glyphicon-comment"></span>  {{ $post->comments()->count() }} Comments</h3>
 			@foreach($post->comments as $comment)
 				<div class="comment">
-					<p><strong>Name:</strong> {{ $comment->name }}</p>
-					<p><strong>Comment:</strong><br/>{{ $comment->comment }}</p><br>
+					<div class="author-info">
+
+						<img src="{{ "https://www.gravatar.com/avatar/" . md5(strtolower(trim($comment->email))) . "?s=50&d=monsterid" }}" class="author-image">
+						<div class="author-name">
+							<h4>{{ $comment->name }}</h4>
+							<p class="author-time">{{ date('F nS, Y - g:iA' ,strtotime($comment->created_at)) }}</p>
+						</div>
+						
+					</div>
+
+					<div class="comment-content">
+						{{ $comment->comment }}
+					</div>
+					
 				</div>
 			@endforeach
 		</div>
