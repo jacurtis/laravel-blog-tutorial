@@ -1,4 +1,4 @@
-## How To Build a (Basic) Blog with Laravel
+# How To Build a (Basic) Blog with Laravel
 
 #### A YouTube Series by DevMarketer
 
