@@ -20,7 +20,7 @@
 
                     <div class="post">
                         <h3>{{ $post->title }}</h3>
-                        <p>{{ substr($post->body, 0, 300) }}{{ strlen($post->body) > 300 ? "..." : "" }}</p>
+                        <p>{{ substr(strip_tags($post->body), 0, 300) }}{{ strlen(strip_tags($post->body)) > 300 ? "..." : "" }}</p>
                         <a href="{{ url('blog/'.$post->slug) }}" class="btn btn-primary">Read More</a>
                     </div>
 
