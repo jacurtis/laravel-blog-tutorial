@@ -6,6 +6,7 @@
 
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
+			<img src="{{asset('/images/' . $post->image)}}" width="800" height="400" />
 			<h1>{{ $post->title }}</h1>
 			<p>{!! $post->body !!}</p>
 			<hr>
@@ -25,13 +26,13 @@
 							<h4>{{ $comment->name }}</h4>
 							<p class="author-time">{{ date('F nS, Y - g:iA' ,strtotime($comment->created_at)) }}</p>
 						</div>
-						
+
 					</div>
 
 					<div class="comment-content">
 						{{ $comment->comment }}
 					</div>
-					
+
 				</div>
 			@endforeach
 		</div>
@@ -40,7 +41,7 @@
 	<div class="row">
 		<div id="comment-form" class="col-md-8 col-md-offset-2" style="margin-top: 50px;">
 			{{ Form::open(['route' => ['comments.store', $post->id], 'method' => 'POST']) }}
-				
+
 				<div class="row">
 					<div class="col-md-6">
 						{{ Form::label('name', "Name:") }}
