@@ -3,11 +3,13 @@
 @section('title', '| About')
 
 @section('content')
-        <div class="row">
-            <div class="col-md-12">
-                <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aspernatur quas quibusdam veniam sunt animi, est quos optio explicabo deleniti inventore unde minus, tempore enim ratione praesentium, cumque, dolores nesciunt?</p>
-            </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h1>About me</h1>
+            <p>My name is: <strong>{{ $data['fullname'] }}</strong></p>
+            <p>My email is: <strong>{{ $data['email'] }}</strong></p>
+
         </div>
+    </div>
 
 @endsection
